@@ -1,15 +1,72 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>90 Projects in 90 Days</title>
-<style>body{font-family:system-ui;margin:2rem;max-width:800px}a{display:block;margin:.25rem 0}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>90 Projects in 90 Days — Index</title>
+  <meta name="description" content="Public index of Marek Stepan's 90 Projects in 90 Days. Each project is small, focused, deployed, and linked here.">
+  <style>
+    :root{--fg:#111827;--muted:#6b7280;--bg:#f9fafb;--card:#fff;--accent:#4f46e5;--ok:#16a34a;--soon:#eab308}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    .wrap{max-width:880px;margin:0 auto;padding:24px}
+    h1{margin:0 0 8px;font-size:clamp(24px,4vw,32px)}
+    p.muted{color:var(--muted);margin:0 0 20px}
+    ol{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+    .card{background:var(--card);border:1px solid #e5e7eb;border-radius:16px;padding:14px 16px;display:flex;align-items:center;gap:12px}
+    .idx{font-weight:600;width:40px;min-width:40px;text-align:center;color:#9ca3af}
+    .title{font-weight:600}
+    .meta{margin-left:auto;display:flex;gap:10px;align-items:center}
+    .badge{font-size:12px;padding:4px 8px;border-radius:999px;color:#fff}
+    .live{background:var(--ok)}
+    .soon{background:var(--soon);color:#111}
+    a.project{color:var(--accent);text-decoration:none}
+    a.project:hover{text-decoration:underline}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+    code{background:#eef2ff;padding:2px 6px;border-radius:6px}
+  </style>
 </head>
 <body>
-  <h1>90 Projects in 90 Days</h1>
-  <p>Each project is built in 1 hour, deployed, and linked here.</p>
-  <ol>
-    <li><a href="https://p01.marekstepan.cz" target="_blank" rel="noopener">Project 1 – Hello Web</a></li>
-  </ol>
+  <div class="wrap">
+    <h1>90 Projects in 90 Days</h1>
+    <p class="muted">Each project is built, deployed, and linked here. Index: <a href="https://90projects.marekstepan.cz">90projects.marekstepan.cz</a></p>
+
+    <ol>
+      <!-- P01 -->
+      <li class="card">
+        <div class="idx">P01</div>
+        <div>
+          <div class="title"><a class="project" href="https://p01.90projects.marekstepan.cz" target="_blank" rel="noopener">Latency Meter</a></div>
+          <div class="muted" style="font-size:13px">FastAPI + Chart.js — live RTT chart (avg / p95 / min / max)</div>
+        </div>
+        <div class="meta"><span class="badge live">Live</span></div>
+      </li>
+
+      <!-- P02–P05 placeholders (edit as you go) -->
+      <li class="card">
+        <div class="idx">P02</div>
+        <div><div class="title">TBD</div><div class="muted" style="font-size:13px">Coming soon</div></div>
+        <div class="meta"><span class="badge soon">Soon</span></div>
+      </li>
+      <li class="card">
+        <div class="idx">P03</div>
+        <div><div class="title">TBD</div><div class="muted" style="font-size:13px">Coming soon</div></div>
+        <div class="meta"><span class="badge soon">Soon</span></div>
+      </li>
+      <li class="card">
+        <div class="idx">P04</div>
+        <div><div class="title">TBD</div><div class="muted" style="font-size:13px">Coming soon</div></div>
+        <div class="meta"><span class="badge soon">Soon</span></div>
+      </li>
+      <li class="card">
+        <div class="idx">P05</div>
+        <div><div class="title">TBD</div><div class="muted" style="font-size:13px">Coming soon</div></div>
+        <div class="meta"><span class="badge soon">Soon</span></div>
+      </li>
+    </ol>
+
+    <footer>
+      Tip: when a project goes live, change its title and link to <code>https://pXX.90projects.marekstepan.cz</code> and swap the badge to <span class="badge live">Live</span>.
+    </footer>
+  </div>
 </body>
 </html>
